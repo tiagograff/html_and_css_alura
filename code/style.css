@@ -1,10 +1,24 @@
+body { /*referenciar tag html*/
+    background: #cccccc;
+}
+
+#banner { /*referenciar id*/
+width: 100%; /*comprimento*/
+}
+
+h1 {
+    text-align: center;
+    /* height: 20px; altura
+    padding: 10px; espaçamento interno
+    margin: 20px; espaçamento externo */
+}
+
 p {
     text-align: center;
 }
 
-body {
-    text-align: center;
-    background: #cccccc;
+ #missao{ 
+    font-size: 20px;
 }
 
 em strong {
