@@ -1,5 +1,16 @@
 header{
     background: #bbbbbb;
+    padding: 20px
+}
+.caixa {
+    position: relative; /*colocar elementos absolute para dentro*/
+    width: 940px;
+    margin: 0 auto; /*cime e baixo - esquerda e direita*/
+}
+nav{
+    position: absolute; /*absoluto em relação ao site*/
+    top: 110px;
+    right: 0;
 }
 
 nav li {

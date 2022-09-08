@@ -1,7 +1,3 @@
-body { /*referenciar tag html*/
-    
-}
-
 #banner { /*referenciar id*/
 width: 100%; /*comprimento*/
 }
@@ -26,7 +22,7 @@ p {
     text-align: center;
 }
 
- #missao{ 
+#missao{ 
     font-size: 20px;
 }
 
