@@ -1,0 +1,51 @@
+#banner { /*referenciar id*/
+width: 100%; /*comprimento*/
+}
+
+.principal{ /*referencia para classe*/
+    background: #cccccc;
+    padding: 30px;
+}
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+    /* height: 20px; altura
+    padding: 10px; espaçamento interno
+    margin: 20px; espaçamento externo */
+}
+
+p {
+    text-align: center;
+}
+
+#missao{ 
+    font-size: 20px;
+}
+
+em strong {
+    color: red;
+}
+
+.itens{ 
+    font-style: italic;
+}
+
+.beneficios {
+    background:#ffffff;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block; 
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagem-beneficios{
+    width: 50%;
+}

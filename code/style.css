@@ -1,51 +1,89 @@
-#banner { /*referenciar id*/
-width: 100%; /*comprimento*/
+header{
+    background: #bbbbbb;
+    padding: 20px
+}
+.caixa {
+    position: relative; /*colocar elementos absolute para dentro*/
+    width: 940px;
+    margin: 0 auto; /*cime e baixo - esquerda e direita*/
+}
+nav{
+    position: absolute; /*absoluto em relação ao site*/
+    top: 110px;
+    right: 0;
 }
 
-.principal{ /*referencia para classe*/
-    background: #cccccc;
-    padding: 30px;
+nav li {
+    display: inline; /*na linha*/
+    margin: 0 0 0 15px; /*topo - direita - baixo - esquerda*/
 }
 
-.titulo-principal{
-    padding-left: 20px;
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-.titulo-centralizado {
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
     text-align: center;
-    /* height: 20px; altura
-    padding: 10px; espaçamento interno
-    margin: 20px; espaçamento externo */
-}
-
-p {
-    text-align: center;
-}
-
-#missao{ 
-    font-size: 20px;
-}
-
-em strong {
-    color: red;
-}
-
-.itens{ 
-    font-style: italic;
-}
-
-.beneficios {
-    background:#ffffff;
-    padding: 20px;
-}
-
-ul {
-    display: inline-block; 
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*espaçamento lateral esteja dentro do percentual*/
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
-.imagem-beneficios{
-    width: 50%;
+.produtos li:hover{
+    border-color: #c78c19;
+}
+
+.produtos li:hover h2{ /*mudar h2*/
+    font-size: 35px;
+}
+
+.produtos li:active{
+    border-color: #088c19;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background-image: url("..\\imagens\\bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
 }
