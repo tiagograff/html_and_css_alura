@@ -239,7 +239,8 @@ td, th{
 
 .lista-beneficios{
     width: 40%;
-    display:inline-block;
+    display: inline-block;
+    vertical-align:top;
 }
 
 .itens{
@@ -285,3 +286,18 @@ img ~ p {
 .principal p:not(#missao){
     background:violet;
 } */
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .beneficios-conteudo, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+}
