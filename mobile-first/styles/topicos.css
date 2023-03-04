@@ -33,8 +33,10 @@
     .tópico__titulo, .tópicos__link{
         font-size: 24px;
     }
+}
 
-    .tópicos__link{
-        width: 30%;
+@media screen and (min-width: 1728px) {
+    .tópicos{
+        padding: 3em 30vw;
     }
 }

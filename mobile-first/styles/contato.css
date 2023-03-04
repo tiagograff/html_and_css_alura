@@ -21,6 +21,9 @@
     margin: 1em 0;
 }
 
+.contato__input{
+    width: 100vw;
+}
 .contato__email {
     padding: 1em;
     border: 1px solid var(--azul);
@@ -39,8 +42,9 @@
 @media screen and (min-width: 1024px){
     .contato{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        padding: 3em 20vw;
     }
 
     .contato__titulo{
@@ -49,10 +53,23 @@
 
     .contato__descrição{
         margin-right: 1em;
-        width: 30%;
     }
 
     .contato__email{
-        width: 30%;
+        width: 50%;
+        margin-left: 50%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato{
+        padding: 3em 20vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato__email{
+        width: 50%;
+        margin-left: 10%;
     }
 }

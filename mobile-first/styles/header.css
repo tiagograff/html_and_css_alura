@@ -6,6 +6,16 @@
     background-position: center;
     display: inline-block;
 }
+/* ~: procura um elemento que esta em seguida dele
+   >: procura algo que está dentro do elmento*/
+
+.container__botao:checked ~ .container-rotulo > .cabeçalho__menu-hamburguer{
+    background-image: url("../img/MenuAberto.png");
+}
+
+.container__botao:checked ~ .container-rotulo{
+    background: var(--azul-degrade);
+}
 
 .cabeçalho {
     background-color: var(--branco);
@@ -54,6 +64,10 @@
     text-transform: uppercase;
 }
 
+.container__texto{
+    display: none;
+}
+
 .container__botao {
     display: none;
 }
@@ -64,6 +78,15 @@
 
 .opcoes{
     display: none;
+}
+
+.opções__botão:checked ~ .opcoes__rotulo > .opcoes__item{
+    background: var(--azul-degrade);
+    color: var(--branco);
+}
+
+.opcoes__item{
+    padding: 2em 1em!important;
 }
 
 @media  screen and (min-width:1024px) {
@@ -111,4 +134,36 @@
     .opções__botão{
         display: none;
     }
+
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__link{
+        display: flex!important;;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabeçalho{
+        padding: 0 2em;
+    }
+
+    .container__texto{
+        display: block;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+   
 }

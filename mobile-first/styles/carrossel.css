@@ -96,3 +96,30 @@
         margin: 2em auto;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .descrição__titulo{
+       font-size: 32px; 
+    }
+
+    .descrição__texto{
+        font-size: 16px;
+    }
+
+    .descrção{
+        margin-right: 2em;
+    }
+
+    .card{
+        width: 60%;
+        margin-left: 3em;
+    }
+}
