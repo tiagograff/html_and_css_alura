@@ -1,4 +1,4 @@
-body{
+body {
     display: grid;
     grid-template-areas: 
     "aside header"
@@ -6,14 +6,14 @@ body{
     grid-template-columns: auto 1fr;
 }
 
-.cabecalho{
+.cabecalho {
     grid-area: header;
 }
 
-.menu-lateral{
+.menu-lateral {
     grid-area: aside;
 }
 
-.principal{
-   grid-area: main; 
+.principal {
+    grid-area: main;
 }
